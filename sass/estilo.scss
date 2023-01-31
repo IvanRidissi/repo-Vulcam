@@ -1,70 +1,26 @@
+@import "generales";
+@import "main";
+@import "grilla";
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&family=Roboto:ital,wght@1,700&display=swap');
-
-
-
-*{  margin: 0%;
-    padding: 0%;
-}
-
-
-h1{
-    text-align: center; 
-    font-weight: bolder;
-    letter-spacing: 10px;
-    text-transform: uppercase;
-    color: rgb(122, 112, 112);
-    line-height: 150px;
-    font-size: 60px;
-    background-color:  rgb(14, 45, 223);
-    
-}
 
 nav{
     font-size: 32px;
     padding: 40px;
-    
-}
-
-.interior{
-    height: 50vh;
-    width: 100%; 
-    margin-top: 3em;
-    display: flex;
-}
-
-
-body{
-    background-color:rgb(176, 223, 241) ;
-    
 }
 
 .card{
     margin: 20px;
-    
 }
 
-.concesionaria{
-    color: rgb(122, 112, 112);
-    text-align: end;
-    font-size: 35px;
-    word-spacing: 3px;
-    padding: 30px;
-}
-
-/* estilo de texto */
-p{ font-family:'Poppins', sans-serif;;
-    font-weight: bold; 
-    font-size: 20px; 
-    text-align: center;
-    line-height: 40px;
-    color: rgb(34, 56, 56);
-    
-}
-
-footer{
+//"aca no puedo aplicar flex en el footer"//
+.footer{
     background-color: rgb(14, 45, 223);
     padding-top: 20px;
+    
+}
+.iconos{
+    display: flex;
+    flex-direction: row;
 
 }
 
@@ -88,27 +44,24 @@ footer{
 .texto{
     font: size 15px;
     justify-content: center;
-    
-}
+    }
 }
 
-
+//"aca no puedo aplicar grid areas en el ultimo media query "//
 @media (min-width:1000px){
 .texto{
     margin-left: 6em;
     margin-right: 6em;
 }
-}
-
 .body{
     width: 100%;
     height: 100vh;
     display: grid;
-    grid-template-areas:
+    grid-template-areas: 
     "header header"
     "h1      h2"
     "grilla grilla"
-    "grilla  card"
+    "grilla card"    
     "footer  footer";
 }
 
@@ -123,10 +76,10 @@ footer{
 }
 .grilla{
     grid-area: grilla;
-    
 }
 .footer{
     grid-area: footer;
+}
 }
 
 .vehiculo{
